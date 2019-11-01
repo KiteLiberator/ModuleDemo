@@ -1,0 +1,2 @@
+include ':app', ':loginmodule', ':myinfomodule'
+rootProject.name='ModuleDemo'
