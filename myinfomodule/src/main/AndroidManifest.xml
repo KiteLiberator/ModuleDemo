@@ -1,2 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myinfomodule" />
+    package="com.example.myinfomodule">
+
+    <application>
+        <activity
+            android:name=".InfoActivity"
+            android:launchMode="singleInstance"/>
+
+    </application>
+
+</manifest>

@@ -4,27 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
-    <TextView
-        android:id="@+id/startway_tv"
+    <EditText
+        android:id="@+id/user_name_ev"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="启动方式"
-        android:textSize="24sp"
+        android:ems="10"
+        android:hint="用户名"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/password_ev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/user_name_ev"
+        app:layout_constraintStart_toStartOf="@+id/user_name_ev"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_ev" />
+
     <Button
-        android:id="@+id/toLogin_btn"
+        android:id="@+id/login_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:text="登录"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
